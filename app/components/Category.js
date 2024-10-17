@@ -15,7 +15,7 @@ const Category = () => {
     ];
 
     return (
-        <div className=" py-1 px-4 sm:px-10 lg:px-20">
+        <div className=" pt-2 pb-10 px-4 sm:px-10 lg:px-20">
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <div className='flex justify-between sm:items-center ' >
@@ -34,7 +34,7 @@ const Category = () => {
                         {categories.map((category, index) => (
                             <button
                                 key={index}
-                                className="min-w-[150px] whitespace-nowrap text-center border-2 border-[#194F3D] text-[#194F3D] font-medium py-2 rounded-lg hover:bg-[#ECF4EF] transition duration-300"
+                                className="min-w-[150px] whitespace-nowrap text-center border-2 border-[#194F3D] bg-white font-medium py-2 rounded-lg hover:bg-[#ECF4EF] transition duration-300"
                             >
                                 {category}
                             </button>
