@@ -7,3 +7,18 @@
 body{
   font-family: "Inter", sans-serif;
 }
+
+.content{
+  background: linear-gradient(to bottom, #FEF7E7, #FFF9EE);
+
+}
+
+/* Hide scrollbar*/
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+}
