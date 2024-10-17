@@ -97,7 +97,7 @@ const TopSellingCourses = () => {
                 {/* Right Column */}
                 <div className='hidden lg:block'>
                     <h3 className="text-lg mr-20 mb-4">
-                        Discover the essentials of computing with our 'Course on Computer Concepts'. From hardware to programming languages, delve into the fundamentals and unlock the keys to navigating the digital world confidently.
+                        Discover the essentials of computing with our Course on Computer Concepts. From hardware to programming languages, delve into the fundamentals and unlock the keys to navigating the digital world confidently.
                     </h3>
 
                     <p className="text-lg mb-2"><strong>Teacher:</strong> Mrs. Bhawna</p>

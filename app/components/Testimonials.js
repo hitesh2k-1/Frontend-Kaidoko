@@ -120,10 +120,10 @@ const Testimonials = () => {
                                 <Image height={40} width={40} src="/images/coma.svg" alt="" />
                                 <p className="my-4 sm:text-2xl mb-4">“{testimonial.quote}”</p>
                                 <div className="flex items-center">
-                                    <img
+                                    <Image height={48} width={48}
                                         src={testimonial.image}
                                         alt={testimonial.name}
-                                        className="w-12 h-12 rounded-full mr-4"
+                                        className="w-12 h-12 bg-green-500 rounded-full mr-4"
                                     />
                                     <div>
                                         <p className="text-black font-semibold">{testimonial.name}</p>

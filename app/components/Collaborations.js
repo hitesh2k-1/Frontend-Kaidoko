@@ -13,7 +13,7 @@ const Collaborations = () => {
                 <div className="lg:w-1/3">
                     <h2 className="sm:text-2xl font-semibold">Our Collaborations</h2>
                     <p className="text-gray-700 text-xs sm:text-base">
-                        We've partnered with industry leaders to deliver courses that not only educate but also immerse you in real-world scenarios, fostering your career growth.
+                        We have partnered with industry leaders to deliver courses that not only educate but also immerse you in real-world scenarios, fostering your career growth.
                     </p>
                 </div>
 
