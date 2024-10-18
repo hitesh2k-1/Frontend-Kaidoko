@@ -1,5 +1,6 @@
 import BlendedLearning from "./components/BlendedLearning";
 import Category from "./components/Category";
+import ChatBot from "./components/ChatBot";
 import Collaborations from "./components/Collaborations";
 import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
@@ -27,6 +28,7 @@ export default function RootLayout() {
         <Collaborations/>
         <BlendedLearning/>
         <Testimonials/>
+        <ChatBot/>
         </div>
         <Footer />
       </body>

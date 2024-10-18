@@ -52,7 +52,7 @@ const Category = () => {
                     </div>
                     <div 
                         ref={imageRef} 
-                        className={` pb-4 transition-transform duration-1000 ease-in-out ${isVisible ? 'transform opacity-100' : 'transform opacity-0 translate-x-40'}`}
+                        className={` pb-4 transition-transform duration-1000 ease-in-out ${isVisible ? 'transform opacity-100' : 'transform opacity-0 translate-y-40'}`}
                     >
                         <Image  height={110} width={90} src="/images/robohead.svg" alt="" />
                     </div>
