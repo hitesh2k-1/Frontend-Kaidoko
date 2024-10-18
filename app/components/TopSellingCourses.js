@@ -37,12 +37,12 @@ const TopSellingCourses = () => {
     };
 
     return (
-        <div className="bg-gradient-to-r from-[#094C3D] to-[#116955] mb-10 sm:mb-20 rounded-3xl shadow-md sm:p-8 p-4 text-white max-w-[92vw] mx-auto">
-
+        <div className="relative bg-gradient-to-r from-[#094C3D] to-[#116955] mb-10 sm:mb-20 rounded-3xl shadow-md sm:p-8 p-4 text-white max-w-[92vw] mx-auto">
+<Image className='absolute top-[-20px] right-10 sm:right-16 sm:w-36' height={60} width={80} src="/images/notes.svg" alt="" />
             <div className="flex gap-10 items-center mb-4">
                 <h2 className="sm:text-3xl text-xl p-4">Top Selling Courses</h2>
                 <div className="items-center text-[#F4B955] gap-2 border-b hidden lg:flex border-[#F4B955]">
-                    <span>View All Courses</span>
+                    <span className='cursor-pointer' >View All Courses</span>
                     <FaArrowRightLong />
                 </div>
             </div>
@@ -66,7 +66,7 @@ const TopSellingCourses = () => {
                             <div
                                 className={`overflow-hidden transition-all duration-500 ${selectedCourse === course.id ? 'max-h-[500px] opacity-100 ' : 'max-h-0 opacity-0'}`}>
                                 <div className="p-4 bg-[#A3E47B33] rounded-b-lg">
-                                    <button className='border px-4 py-1 rounded-full my-2 text-sm' >BestSeller</button>
+                                    <button className='border px-4 py-1 rounded-full my-2 text-sm' >Best Seller</button>
                                     <p>{course.details}</p>
                                     <p className="mt-2 font-semibold ">Teacher: Mrs. Bhawna</p>
                                     <div className="flex items-center mb-4">
@@ -112,11 +112,11 @@ const TopSellingCourses = () => {
 
                     <div className="mt-4 flex gap-6">
                         <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                            <span>View Details</span>
+                            <span className='cursor-pointer' >View Details</span>
                             <FaArrowRightLong />
                         </div>
                         <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                            <span>Wishlist Course</span>
+                            <span className='cursor-pointer' >Wishlist Course</span>
                             <FaArrowRightLong />
                         </div>
                     </div>

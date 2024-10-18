@@ -11,7 +11,7 @@ const Collaborations = () => {
                             className="absolute left-10 top-[-50px]"/>
                 {/* Left Section*/}
                 <div className="lg:w-1/3">
-                    <h2 className="sm:text-2xl font-semibold">Our Collaborations</h2>
+                    <h2 className="sm:text-2xl text-lg font-semibold">Our Collaborations</h2>
                     <p className="text-gray-700 text-xs sm:text-base">
                         We have partnered with industry leaders to deliver courses that not only educate but also immerse you in real-world scenarios, fostering your career growth.
                     </p>

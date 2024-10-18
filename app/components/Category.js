@@ -20,7 +20,7 @@ const Category = () => {
                 {/* Heading */}
                 <div className='flex justify-between sm:items-center ' >
                 <div className='text-start ' >
-                <h2 className="sm:text-2xl font-semibold text-black  mb-2">Browse by Categories</h2>
+                <h2 className="sm:text-2xl text-lg font-semibold text-black  mb-2">Browse by Categories</h2>
                 <p className="text-gray-600 text-sm sm:text-base mb-8">
                     Select the topics below to view corresponding courses.
                 </p>

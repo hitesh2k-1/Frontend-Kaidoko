@@ -72,7 +72,7 @@ const TopSelling = () => {
                                     <Image width={250} height={250}
                                         src={course.image}
                                         alt={course.title}
-                                        className="w-full h-24 md:h-[198px] md:w-[230px] object-cover object-left-top rounded-md mb-4 md:mb-0"
+                                        className="w-full h-24 md:h-[198px] md:w-[230px] object-cover md:object-left-top rounded-md mb-4 md:mb-0"
                                     />
                                 </div>
                                 <div className="px-2 pb-2 " >

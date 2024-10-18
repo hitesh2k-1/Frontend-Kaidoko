@@ -116,7 +116,7 @@ const Testimonials = () => {
                     {/* Testimonial Cards */}
                     {testimonials.map((testimonial) => (
                         <div key={testimonial.id} className="min-w-[300px] snap-center">
-                            <blockquote className="flex flex-col">
+                            <div className="flex flex-col">
                                 <Image height={40} width={40} src="/images/coma.svg" alt="" />
                                 <p className="my-4 sm:text-2xl mb-4">“{testimonial.quote}”</p>
                                 <div className="flex items-center">
@@ -130,7 +130,7 @@ const Testimonials = () => {
                                         <p className="text-gray-500">{testimonial.role}</p>
                                     </div>
                                 </div>
-                            </blockquote>
+                            </div>
                         </div>
                     ))}
                 </div>

@@ -64,8 +64,8 @@ const BlendedLearning = () => {
                     <div>
                         <h2 className="text-2xl font-semibold text-black mb-4">Blended Learning</h2>
                     </div>
-                    <div className="flex items-center gap-5" >
-                        <p className="underline md:block hidden text-blue-400" >View All Courses</p>
+                    <div className=" items-center md:flex hidden gap-5" >
+                        <p className="underline text-blue-400" >View All Courses</p>
                         <div className=" flex gap-3 cursor-pointer">
                             <Image  onClick={handlePrevSlide} height={36} width={36} src="/images/leftarrow.svg" alt="" />
                             <Image  onClick={handleNextSlide} height={36} width={36} src="/images/rightarrow.svg" alt="" />

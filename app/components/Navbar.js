@@ -8,7 +8,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between mx-5 sm:mx-10  my-4'>
+        <div className='flex sticky bg-white p-3 sm:px-10 shadow-lg w-full top-0 z-20 justify-between '>
             <div className='flex gap-4 items-center '>
                 <Image className='cursor-pointer sm:w-20 ' height={53} width={38} src="/images/logo.svg" alt="" />
                 <div className='hidden lg:flex items-center cursor-pointer gap-1'>
