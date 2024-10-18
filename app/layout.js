@@ -19,16 +19,16 @@ export default function RootLayout() {
   return (
     <html lang="en">
       <body>
-        <Navbar/>
+        <Navbar />
         <div className="content min-h-screen shadow-inner shadow-[#F8E2B4]" >
-        <HomePage/>
-        <TopSellingCourses/>
-        <Category/>
-        <TopSelling/>
-        <Collaborations/>
-        <BlendedLearning/>
-        <Testimonials/>
-        <ChatBot/>
+          <HomePage />
+          <TopSellingCourses />
+          <Category />
+          <TopSelling />
+          <Collaborations />
+          <BlendedLearning />
+          <Testimonials />
+          <ChatBot />
         </div>
         <Footer />
       </body>

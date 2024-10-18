@@ -5,8 +5,8 @@ import { FaSearch } from 'react-icons/fa';
 import { RxHamburgerMenu } from "react-icons/rx";
 
 
-
 const Navbar = () => {
+
     return (
         <div className='flex sticky bg-white p-3 sm:px-10 w-full top-0 z-20 justify-between '>
             <div className='flex gap-4 items-center '>
@@ -43,6 +43,7 @@ const Navbar = () => {
             </div>
         </div>
     )
-}
+};
+
 
 export default Navbar
