@@ -17,25 +17,29 @@ const HomePage = () => {
                         <span className="font-thin">Skyrocket your</span>{" "}
                         <span>career towards excellence</span>
                     </h1>
-                    <Image height={110} width={110} className={'lg:hidden translate-y-[-60px] transition-transform'}  src="/images/scroll.svg" alt="" />
+                    <Image height={110} width={110}
+                     className={`lg:hidden -translate-y-14 duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[100%] opacity-0"}`}  src="/images/scroll.svg" alt="" />
                 </div>
 
                 <ul className="font-semibold font">
                     <li className="flex items-center mb-3">
                         <span className="mr-3">
-                            <Image height={36} width={36} className={`transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/book.svg" alt="" />
+                            <Image height={36} width={36}
+                             className={`transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/book.svg" alt="" />
                         </span>
                         <span>Flexible Learning</span>
                     </li>
                     <li className="flex items-center mb-3">
                         <span className="mr-3">
-                            <Image height={36} width={36} className={`transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/degree.svg" alt="" />
+                            <Image height={36} width={36} 
+                            className={`transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/degree.svg" alt="" />
                         </span>
                         <span>Interactive Learning Experience</span>
                     </li>
                     <li className="flex items-center">
                         <span className="mr-3">
-                            <Image height={36} width={36} className={`transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/career.svg" alt="" />
+                            <Image height={36} width={36}
+                             className={`transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/career.svg" alt="" />
                         </span>
                         <span>Career Opportunities</span>
                     </li>
@@ -43,11 +47,16 @@ const HomePage = () => {
             </div>
 
             <div className="relative mt-24 max-w-[80vw]">
-                <Image height={219} width={305} className={`sm:w-full transition-transform duration-1000 ${loaded ? "translate-y-0 opacity-100" : "translate-y-[100%] opacity-0"}`} src="/images/circle.svg" alt="" />
-                <Image height={162} width={135} className={`absolute bottom-0 left-0 sm:left-8 sm:w-[38%] xl:w-[40%] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/lawyer.svg" alt="" />
-                <Image height={253} width={250} className={`absolute bottom-0 right-0 sm:w-[70%] xl:w-[75%] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[100%] opacity-0"}`} src="/images/kids.svg" alt="" />
-                <Image height={104} width={156} className={`hidden lg:block absolute xl:top-[-130px] right-0 xl:w-[25%] lg:w-[20%] lg:top-[-70px] transition-transform duration-1000 ${loaded ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"}`} src="/images/scroll.svg" alt="" />
-                <Image height={113} width={115} className={`hidden xl:block absolute bottom-5 left-[-170px] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/bag.svg" alt="" />
+                <Image height={219} width={305}
+                 className={`sm:w-full transition-transform duration-1000 ${loaded ? "translate-y-0 opacity-100" : "translate-y-[100%] opacity-0"}`} src="/images/circle.svg" alt="" />
+                <Image height={162} width={135}
+                 className={`absolute bottom-0 left-0 sm:left-8 sm:w-[38%] xl:w-[40%] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/lawyer.svg" alt="" />
+                <Image height={253} width={250}
+                 className={`absolute bottom-0 right-0 sm:w-[70%] xl:w-[75%] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[100%] opacity-0"}`} src="/images/kids.svg" alt="" />
+                <Image height={104} width={156}
+                 className={`hidden lg:block absolute xl:top-[-130px] right-0 xl:w-[25%] lg:w-[20%] lg:top-[-70px] transition-transform duration-1000 ${loaded ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"}`} src="/images/scroll.svg" alt="" />
+                <Image height={113} width={115}
+                 className={`hidden xl:block absolute bottom-5 left-[-170px] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/bag.svg" alt="" />
             </div>
         </div>
     );
