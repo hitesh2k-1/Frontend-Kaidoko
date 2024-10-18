@@ -64,7 +64,7 @@ const Category = () => {
                         {categories.map((category, index) => (
                             <button
                                 key={index}
-                                className="min-w-[150px] whitespace-nowrap text-center border-2 border-[#194F3D] bg-white font-medium py-2 rounded-lg hover:bg-[#ECF4EF] transition duration-300"
+                                className="min-w-[150px] whitespace-nowrap text-center border-2 border-[#194F3D] bg-white font-medium py-2 rounded-lg hover:bg-[#ECF8DF] transform transition hover:-translate-y-2 duration-300"
                             >
                                 {category}
                             </button>

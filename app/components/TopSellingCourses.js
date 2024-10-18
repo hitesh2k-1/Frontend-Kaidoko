@@ -165,7 +165,7 @@ const TopSellingCourses = () => {
                 </div>
                 <div className="flex lg:flex-row lg:justify-end items-start flex-col xl:gap-20 gap-4 xl:mx-10 lg:items-center">
                     <h4 className="md:text-xl lg:text-2xl z-10 sm:text-base text-sm sm:font-semibold w-5/6 sm:w-3/5 text-black">Take a practice Quiz designed to sharpen your skills</h4>
-                    <button className='flex items-center z-10 bg-[#F4B955] text-black sm:font-semibold text-sm sm:text-base px-4 py-2 rounded-full gap-2'>
+                    <button className='flex items-center z-10 bg-[#F4B955] text-black sm:font-semibold text-sm sm:text-base px-4 py-2 rounded-full gap-2 transform transition hover:-translate-y-2 duration-300'>
                         Take Quiz
                         <FaArrowRightLong />
                     </button>

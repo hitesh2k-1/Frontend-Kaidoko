@@ -56,9 +56,9 @@ const TopSelling = () => {
                     <div>
                         <h2 className="text-2xl  font-semibold text-black mb-4">Top Selling in Technology</h2>
                     </div>
-                    <div className=" flex gap-3 cursor-pointer">
-                        <Image onClick={handlePrevSlide} height={36} width={36} src="/images/leftarrow.svg" alt="" />
-                        <Image onClick={handleNextSlide} height={36} width={36} src="/images/rightarrow.svg" alt="" />
+                    <div className=" flex gap-3 cursor-pointer ">
+                        <Image className="transform hover:-translate-x-2 duration-300" onClick={handlePrevSlide} height={36} width={36} src="/images/leftarrow.svg" alt="" />
+                        <Image className="transform hover:translate-x-2 duration-300" onClick={handleNextSlide} height={36} width={36} src="/images/rightarrow.svg" alt="" />
                     </div>
                 </div>
                 {/* Scroll */}
@@ -67,7 +67,7 @@ const TopSelling = () => {
                         {courses.map((course, index) => (
                             <div
                                 key={index}
-                                className="w-[250px] md:w-full flex flex-col md:items-center md:flex-row  bg-white rounded-lg p-1 border-2 border-gray-300 cursor-pointer shadow-md"
+                                className="w-[250px] my-2 md:w-full flex flex-col md:items-center md:flex-row transform hover:-translate-y-2 duration-300  bg-white rounded-lg p-1 border-2 border-gray-300 cursor-pointer shadow-md"
                             ><div>
                                     <Image width={250} height={250}
                                         src={course.image}

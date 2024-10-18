@@ -28,19 +28,19 @@ const ChatBot = () => {
             {/* Chat Window */}
             {isOpen && (
                 <Draggable cancel=".no-drag">
-                    <div className="bg-white w-80 sm:w-96 h-[400px] sm:h-[450px] rounded-xl shadow-lg overflow-scroll scrollbar-hide">
+                <div className="bg-white w-80 sm:w-96 h-[400px] sm:h-[450px] rounded-xl shadow-lg overflow-scroll scrollbar-hide">
                         <div>
                             <div className="bg-gradient-to-r from-[#094C3D] to-[#116955] text-white rounded-t-lg p-4 flex justify-between items-center cursor-pointer">
                                 <h2 className="text-xl">GenAI Chatbot</h2>
                                 <button
                                     onClick={toggleChat}
-                                    className="text-white hover:text-gray-200 hover:text-xl text-lg no-drag"
+                                    className="text-white no-drag hover:text-gray-200 hover:text-xl text-lg "
                                 >
                                     X
                                 </button>
                             </div>
                         </div>
-                        <div className="p-4 space-y-4 text-sm sm:text-base">
+                        <div className="p-4 space-y-4 text-sm sm:text-base no-drag">
                             {/* Bot's Message */}
                             <div className="flex items-start">
                                 <Image
@@ -61,7 +61,7 @@ const ChatBot = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="p-4 absolute bottom-0 bg-white rounded-xl w-full">
+                        <div className=" no-drag p-4 absolute bottom-0 bg-white rounded-xl w-full">
                             <div className="flex gap-3 flex-col items-start bg-white rounded-xl border border-gray-300 px-4 py-2">
                                 <div className="w-full">
                                     <input

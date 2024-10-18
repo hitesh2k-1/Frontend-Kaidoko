@@ -67,8 +67,8 @@ const BlendedLearning = () => {
                     <div className=" items-center md:flex hidden gap-5" >
                         <p className="underline text-blue-400" >View All Courses</p>
                         <div className=" flex gap-3 cursor-pointer">
-                            <Image  onClick={handlePrevSlide} height={36} width={36} src="/images/leftarrow.svg" alt="" />
-                            <Image  onClick={handleNextSlide} height={36} width={36} src="/images/rightarrow.svg" alt="" />
+                            <Image className="transform hover:-translate-x-2 duration-300"  onClick={handlePrevSlide} height={36} width={36} src="/images/leftarrow.svg" alt="" />
+                            <Image  className="transform hover:translate-x-2 duration-300" onClick={handleNextSlide} height={36} width={36} src="/images/rightarrow.svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const BlendedLearning = () => {
                         {courses.map((course, index) => (
                             <div
                                 key={index}
-                                className="w-[250px] md:min-w-[360px] cursor-pointer flex flex-col  bg-white rounded-lg p-2 shadow-md"><div>
+                                className="w-[250px] md:min-w-[360px] my-2 hover:shadow-md cursor-pointer flex flex-col  bg-white rounded-lg p-2 transform hover:-translate-y-2 duration-300 shadow-sm border-2 border-gray-300"><div>
                                     <Image width={250} height={250}
                                         src={course.image}
                                         alt={course.title}
