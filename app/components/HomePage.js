@@ -52,7 +52,7 @@ const HomePage = () => {
                 <Image height={162} width={135} priority
                  className={`absolute bottom-0 left-0 sm:left-8 sm:w-[38%] xl:w-[40%] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"}`} src="/images/lawyer.svg" alt="" />
                 <Image height={253} width={250} priority
-                 className={`absolute bottom-0 right-0 sm:w-[70%] xl:w-[75%] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[100%] opacity-0"}`} src="/images/kids.svg" alt="" />
+                 className={`absolute bottom-0 right-0 sm:w-[70%] xl:w-[75%] transition-transform duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[20%] opacity-0"}`} src="/images/kids.svg" alt="" />
                 <Image height={104} width={156} priority
                  className={`hidden lg:block absolute xl:top-[-130px] right-0 xl:w-[25%] lg:w-[20%] lg:top-[-70px] transition-transform duration-1000 ${loaded ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"}`} src="/images/scroll.svg" alt="" />
                 <Image height={113} width={115} priority
