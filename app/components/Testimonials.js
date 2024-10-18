@@ -115,7 +115,7 @@ const Testimonials = () => {
                     className="md:w-2/3 overflow-x-scroll flex gap-8 scrollbar-hide snap-x snap-mandatory">
                     {/* Testimonial Cards */}
                     {testimonials.map((testimonial) => (
-                        <div key={testimonial.id} className="min-w-[300px] snap-center">
+                        <div key={testimonial.id} className="min-w-[90vw] sm:min-w-[300px] snap-center">
                             <div className="flex flex-col">
                                 <Image height={40} width={40} src="/images/coma.svg" alt="" />
                                 <p className="my-4 sm:text-2xl mb-4">“{testimonial.quote}”</p>
