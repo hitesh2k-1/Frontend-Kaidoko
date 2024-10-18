@@ -17,8 +17,10 @@ body{
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar */
 .scrollbar-hide {
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
+}
+
+.no-drag {
+  pointer-events: auto; /* Removing the dragable area from particual object */
 }

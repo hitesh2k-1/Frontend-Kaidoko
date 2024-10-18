@@ -27,14 +27,14 @@ const ChatBot = () => {
 
             {/* Chat Window */}
             {isOpen && (
-                <Draggable>
+                <Draggable cancel=".no-drag">
                     <div className="bg-white w-80 sm:w-96 h-[400px] sm:h-[450px] rounded-xl shadow-lg overflow-scroll scrollbar-hide">
                         <div>
                             <div className="bg-gradient-to-r from-[#094C3D] to-[#116955] text-white rounded-t-lg p-4 flex justify-between items-center cursor-pointer">
                                 <h2 className="text-xl">GenAI Chatbot</h2>
                                 <button
                                     onClick={toggleChat}
-                                    className="text-white hover:text-gray-200 hover:text-xl text-lg"
+                                    className="text-white hover:text-gray-200 hover:text-xl text-lg no-drag"
                                 >
                                     X
                                 </button>
