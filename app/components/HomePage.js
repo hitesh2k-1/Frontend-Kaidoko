@@ -18,7 +18,7 @@ const HomePage = () => {
                         <span>career towards excellence</span>
                     </h1>
                     <Image height={110} width={110} priority
-                     className={`lg:hidden -translate-y-14 duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[100%] opacity-0"}`}  src="/images/scroll.svg" alt="" />
+                     className={`lg:hidden -translate-y-14 duration-1000 ${loaded ? "translate-x-0 opacity-100" : "translate-x-[50%] opacity-0"}`}  src="/images/scroll.svg" alt="" />
                 </div>
 
                 <ul className="font-semibold font">
