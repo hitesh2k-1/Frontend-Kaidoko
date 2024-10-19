@@ -58,8 +58,8 @@ const Navbar = () => {
 
          {/* Mobile Menu  */}
             {menuOpen && (
-                <div className='absolute top-full left-0 w-full bg-white shadow-lg z-20 py-4'>
-                    <ul className='flex flex-col items-start p-4 '>
+                <div className='absolute top-full left-0 w-full bg-white shadow-lg z-20 '>
+                    <ul className='flex flex-col items-start px-4 py-2 '>
                         <li className='w-full p-2 my-2 hover:bg-gray-100 rounded-2xl cursor-pointer flex items-center justify-between'>
                             Courses <FaAngleDown />
                         </li>

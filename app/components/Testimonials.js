@@ -119,10 +119,10 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <div className="gap-3 cursor-pointer hidden md:flex">
-                        <Image height={36} width={36}
+                        <Image className='transform duration-300 hover:scale-110' height={36} width={36}
                             onClick={handlePrevSlide} src="/images/leftarrow.svg" alt=""
                         />
-                        <Image height={36} width={36}
+                        <Image className='transform duration-300 hover:scale-110' height={36} width={36}
                             onClick={handleNextSlide} src="/images/rightarrow.svg" alt=""
                         />
                     </div>

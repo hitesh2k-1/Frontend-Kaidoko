@@ -96,7 +96,7 @@ const TopSellingCourses = () => {
                     {courses.map((course) => (
                         <div key={course.id} className="w-full mb-2">
                             <div
-                                className="flex justify-between items-center lg:max-w-[600px] hover:bg-[#A3E47B33] rounded-t-lg lg:rounded-lg cursor-pointer" onClick={() => toggleCourse(course.id)}>
+                                className={`flex justify-between items-center lg:max-w-[600px] hover:bg-[#A3E47B33] rounded-t-lg lg:rounded-lg  cursor-pointer ${selectedCourse === course.id ? "bg-[#A3E47B33] sm:bg-none " : "bg-none"} `} onClick={() => toggleCourse(course.id)}>
                                 <div className="flex items-center p-4">
                                     <Image src={course.imgSrc} alt="" width={50} height={50} className="rounded-lg" />
                                     <span className="ml-4 sm:text-lg font-medium">{course.title}</span>
