@@ -122,11 +122,11 @@ const TopSellingCourses = () => {
                                     </p>
                                     <div className="mt-4 flex gap-6">
                                         <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                                            <span>View Details</span>
+                                            <span className='text-xs sm:text-base' >View Details</span>
                                             <FaArrowRightLong />
                                         </div>
                                         <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                                            <span>Wishlist Course</span>
+                                            <span className='text-xs sm:text-base' >Wishlist Course</span>
                                             <FaArrowRightLong />
                                         </div>
                                     </div>
@@ -153,13 +153,13 @@ const TopSellingCourses = () => {
 
                         <p className="text-3xl font-semibold">{selectedCourseData.price} <span className="text-base text-gray-300 font-normal">(inclusive of taxes)</span></p>
 
-                        <div className="mt-4 flex gap-6">
+                        <div className="mt-4 flex flex-wrap gap-6">
                             <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                                <span className='cursor-pointer'>View Details</span>
+                                <span className=' cursor-pointer'>View Details</span>
                                 <FaArrowRightLong />
                             </div>
                             <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                                <span className='cursor-pointer'>Wishlist Course</span>
+                                <span className=' cursor-pointer'>Wishlist Course</span>
                                 <FaArrowRightLong />
                             </div>
                         </div>

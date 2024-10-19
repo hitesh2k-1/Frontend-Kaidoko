@@ -14,7 +14,7 @@ const HomePage = () => {
             <div className={`max-w-[80vw] sm:max-w-[65vw] md:max-w-[500px] transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}>
                 <div className="flex justify-between items-start">
                     <h1 className="sm:text-5xl text-3xl mb-6">
-                        <span className="font-thin">Skyrocket your</span>{" "}
+                        <span className="font-thin">Skyrocket your </span>
                         <span>career towards excellence</span>
                     </h1>
                     <Image height={110} width={110} priority

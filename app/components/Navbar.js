@@ -7,7 +7,7 @@ import { RxCross2 } from "react-icons/rx";
 
 
 const Navbar = () => {
-    // mobile menu visiblity
+    // mobile menu 
     const [menuOpen, setMenuOpen] = useState(false);
 
     // Toggle hamburger
