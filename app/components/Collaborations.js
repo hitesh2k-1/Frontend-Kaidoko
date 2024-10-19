@@ -33,7 +33,7 @@ const Collaborations = () => {
                     ref={iconRef}
                     className={`absolute left-10 top-[-50px] transition-transform duration-1000 ease-in-out ${isVisible ? 'transform opacity-100' : 'transform opacity-0 translate-y-10'}`}
                 >
-                    <Image height={75} width={75} src="/images/icon.svg" alt="icon" />
+                    <Image height={75} width={75} src="/images/icon.svg" alt="" />
                 </div>
                 
                 {/* Left Section */}
@@ -47,15 +47,15 @@ const Collaborations = () => {
                 {/* Right Section */}
                 <div className="lg:w-2/3 flex flex-wrap justify-start items-center gap-10 sm:gap-14">
                     <Image height={36} width={110}
-                     src="/images/google.svg" alt="Google" className="w-30 sm:w-40"/>
+                     src="/images/google.svg" alt="" className="w-30 sm:w-40"/>
                     <Image height={36} width={110}
-                     src="/images/microsoft.svg" alt="Microsoft" className="w-30 sm:w-40"/>
+                     src="/images/microsoft.svg" alt="" className="w-30 sm:w-40"/>
                     <Image height={36} width={110}
-                     src="/images/adobe.svg" alt="Adobe" className="w-30 sm:w-40"/>
+                     src="/images/adobe.svg" alt="" className="w-30 sm:w-40"/>
                     <Image height={36} width={110}
-                     src="/images/amazon.svg" alt="Amazon" className="w-30 sm:w-40"/>
+                     src="/images/amazon.svg" alt="" className="w-30 sm:w-40"/>
                     <Image height={36} width={110}
-                     src="/images/ibm.svg" alt="IBM" className="w-30 sm:w-40"/>
+                     src="/images/ibm.svg" alt="" className="w-30 sm:w-40"/>
                 </div>
             </div>
         </div>

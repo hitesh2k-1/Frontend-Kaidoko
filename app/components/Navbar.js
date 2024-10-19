@@ -3,12 +3,14 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaAngleDown, FaSearch } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
+
 
 const Navbar = () => {
-    // State to manage the visibility of the mobile menu
+    // mobile menu visiblity
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Toggle menu when the hamburger icon is clicked
+    // Toggle hamburger
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -49,12 +51,12 @@ const Navbar = () => {
                     </button>
                     <Image className='lg:hidden sm:w-12 cursor-pointer' width={31} height={31} src="/images/chatbot.png" alt="" />
                     <span onClick={toggleMenu} className='md:hidden text-2xl cursor-pointer'>
-                        <RxHamburgerMenu />
+                    {menuOpen ? <RxCross2 /> : <RxHamburgerMenu />}
                     </span>
                 </div>
             </div>
 
-            {/* Mobile Menu - Toggle visibility based on state */}
+         {/* Mobile Menu  */}
             {menuOpen && (
                 <div className='absolute top-full left-0 w-full bg-white shadow-lg z-20 py-4'>
                     <ul className='flex flex-col items-start p-4 '>
@@ -65,13 +67,13 @@ const Navbar = () => {
                             My Learnings <FaAngleDown />
                         </li>
                         <div className='flex items-center justify-between'>
-                        <li className=' p-2 transition-transform duration-300  hover:scale-105 cursor-pointer'>
+                        <li className=' p-2 transition-transform duration-300  hover:scale-110 cursor-pointer'>
                             <button className='w-full  text-left border-[#F4B955] text-lg font-semibold border-2 rounded-full px-8 p-1'>
                                 Login
                             </button>
                         </li>
-                        <li className=' p-2 transition-transform duration-300  hover:scale-105 cursor-pointer'>
-                            <button className='w-full  text-left bg-[#F4B955] text-lg font-semibold rounded-full px-6 py-2'>
+                        <li className=' p-2 transition-transform duration-300  hover:scale-110 cursor-pointer'>
+                            <button className='w-full  text-left bg-[#F4B955] text-lg font-semibold border-2 border-[#F4B955] rounded-full px-6 py-1'>
                                 Register
                             </button>
                         </li>

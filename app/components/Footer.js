@@ -28,14 +28,14 @@ const Footer = () => {
                             <a href="https://www.facebook.com" aria-label="Facebook" className=" text-white transition-transform duration-300 transform hover:scale-125">
                                 <FaFacebookSquare size={30} />
                             </a>
-                            <a href="https://twitter.com" aria-label="X (Twitter)" className=" text-white transition-transform duration-300 transform hover:scale-125">
+                            <a href="https://twitter.com" aria-label="Twitter" className=" text-white transition-transform duration-300 transform hover:scale-125">
                                 <FaSquareXTwitter size={30} />
 
                             </a>
                         </div>
                     </div>
                     <div className="flex items-end gap-20">
-                        <Image height={165} width={100} src="/images/bigbot.png" alt="Robot" className="transition-transform transform hover:-translate-y-2 cursor-pointer " />
+                        <Image height={165} width={100} src="/images/bigbot.png" alt="" className="transition-transform transform hover:-translate-y-2 cursor-pointer " />
                         <Image className="hidden lg:block transition-transform transform hover:-translate-y-2 cursor-pointer" height={72} width={72} src="/images/chatbot.png" alt="" />
                     </div>
                 </div>

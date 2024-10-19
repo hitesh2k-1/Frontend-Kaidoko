@@ -5,7 +5,7 @@ import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useState, useEffect, useRef } from 'react';
 
 const TopSellingCourses = () => {
-    const [selectedCourse, setSelectedCourse] = useState(null);
+    const [selectedCourse, setSelectedCourse] = useState(1);
     const [loadedNotes, setLoadedNotes] = useState(false);
     const [loadedNotebook, setLoadedNotebook] = useState(false);
     const notesRef = useRef(null);
@@ -98,7 +98,7 @@ const TopSellingCourses = () => {
                             <div
                                 className="flex justify-between items-center lg:max-w-[600px] hover:bg-[#A3E47B33] rounded-t-lg lg:rounded-lg cursor-pointer" onClick={() => toggleCourse(course.id)}>
                                 <div className="flex items-center p-4">
-                                    <Image src={course.imgSrc} alt={course.title} width={50} height={50} className="rounded-lg" />
+                                    <Image src={course.imgSrc} alt="" width={50} height={50} className="rounded-lg" />
                                     <span className="ml-4 sm:text-lg font-medium">{course.title}</span>
                                 </div>
                                 <div className="pr-4 lg:hidden" onClick={() => toggleCourse(course.id)}>
@@ -113,7 +113,7 @@ const TopSellingCourses = () => {
                                     <p className="mt-2 font-semibold">Teacher: {course.teacher}</p>
                                     <div className="flex items-center mb-4">
                                         <div className='flex items-center gap-2'>
-                                            <span><Image height={10} width={60} src="/images/stars.svg" alt="Stars Rating" /></span>
+                                            <span><Image height={10} width={60} src="/images/stars.svg" alt="" /></span>
                                             <span className="font-semibold font-lg"> 4.5 by 1,724 students</span>
                                         </div>
                                     </div>
@@ -146,7 +146,7 @@ const TopSellingCourses = () => {
                         <p className="text-lg mb-2"><strong>Teacher:</strong> {selectedCourseData.teacher}</p>
                         <div className="flex items-center mb-4">
                             <div className='flex items-center gap-2'>
-                                <span><Image height={14} width={85} src="/images/stars.svg" alt="Stars Rating" /></span>
+                                <span><Image height={14} width={85} src="/images/stars.svg" alt="" /></span>
                                 <span className="font-semibold font-lg"> 4.5 by 1,724 students</span>
                             </div>
                         </div>
@@ -170,8 +170,8 @@ const TopSellingCourses = () => {
             {/* Bottom Section */}
             <div className="bg-[#ECF8DF] relative rounded-lg p-4 sm:p-6 mt-10 lg:mt-32 flex lg:justify-between items-center">
                 <div className='flex items-center'>
-                    <Image ref={notebookRef} className={'absolute bottom-0 lg:left-10 sm:right-8 right-2 sm:w-[300px]'} src="/images/semiircle.svg" alt="Quiz Icon" width={158} height={92} />
-                    <Image className={`absolute bottom-3 sm:bottom-5 lg:bottom-8 sm:right-20 lg:left-36 right-6 sm:w-[150px] transition-transform duration-1000 ${loadedNotebook ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"}`} src="/images/notebook.svg" alt="Notebook Icon" width={110} height={70} />
+                    <Image ref={notebookRef} className={'absolute bottom-0 lg:left-10 sm:right-8 right-2 sm:w-[300px]'} src="/images/semiircle.svg" alt="" width={158} height={92} />
+                    <Image className={`absolute bottom-3 sm:bottom-5 lg:bottom-8 sm:right-20 lg:left-36 right-6 sm:w-[150px] transition-transform duration-1000 ${loadedNotebook ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"}`} src="/images/notebook.svg" alt="" width={110} height={70} />
                 </div>
                 <div className="flex lg:flex-row lg:justify-end items-start flex-col xl:gap-20 gap-4 xl:mx-10 lg:items-center">
                     <h4 className="md:text-xl lg:text-2xl z-10 sm:text-base text-sm sm:font-semibold w-5/6 sm:w-3/5 text-black">Take a practice Quiz designed to sharpen your skills</h4>

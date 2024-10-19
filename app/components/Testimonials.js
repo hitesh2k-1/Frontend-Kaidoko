@@ -32,7 +32,7 @@ const Testimonials = () => {
     const pencilRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
 
-    // Handle the scroll event to detect which slide is in view
+    // Handle Scroll
     const handleScroll = () => {
         if (scrollRef.current) {
             const scrollLeft = scrollRef.current.scrollLeft;
@@ -76,6 +76,7 @@ const Testimonials = () => {
         };
     }, [currentSlide]);
 
+    
     // Intersection Observer for the pencil image
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -112,31 +113,31 @@ const Testimonials = () => {
                         <h2 className="text-3xl font-semibold mb-4">Testimonials</h2>
                         <div className="flex items-center mb-4">
                             <div className='flex items-center md:flex-col md:items-start gap-2'>
-                                <span><Image height={10} width={100} src="/images/stars.svg" alt="Stars Rating" /></span>
+                                <span><Image height={10} width={100} src="/images/stars.svg" alt="" /></span>
                                 <span className="font-semibold text-lg">  4.5 by 1,724 students</span>
                             </div>
                         </div>
                     </div>
                     <div className="gap-3 cursor-pointer hidden md:flex">
                         <Image height={36} width={36}
-                            onClick={handlePrevSlide} src="/images/leftarrow.svg" alt="Previous"
+                            onClick={handlePrevSlide} src="/images/leftarrow.svg" alt=""
                         />
                         <Image height={36} width={36}
-                            onClick={handleNextSlide} src="/images/rightarrow.svg" alt="Next"
+                            onClick={handleNextSlide} src="/images/rightarrow.svg" alt=""
                         />
                     </div>
                 </div>
 
                 <div className='hidden md:block border-2 mr-10 border-gray-300 h-96'></div>
 
-                {/* Right Side: Scrollable Testimonials */}
+                {/* Right Side*/}
                 <div
                     ref={scrollRef}
                     className="md:w-2/3 overflow-x-scroll flex gap-8 scrollbar-hide snap-x snap-mandatory"
                 >
-                    {/* Testimonial Cards */}
+                    {/*Cards */}
                     {testimonials.map((testimonial) => (
-                        <div key={testimonial.id} className="min-w-[90vw] sm:min-w-[300px] snap-center">
+                        <div key={testimonial.id} className="min-w-[85vw] sm:min-w-[300px] snap-center">
                             <div className="flex flex-col">
                                 <Image height={40} width={40} src="/images/coma.svg" alt="" />
                                 <p className="my-4 sm:text-2xl mb-4">“{testimonial.quote}”</p>

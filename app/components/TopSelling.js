@@ -83,24 +83,16 @@ const TopSelling = () => {
                                             {Array(Math.round(course.rating))
                                                 .fill()
                                                 .map((_, index) => (
-                                                    <Image height={10} width={10}
-                                                        key={index}
-                                                        src="/images/star.svg"
-                                                        alt="Full Star"
-                                                        className="w-4 h-4"
-                                                    />
+                                                    <Image height={10} width={10} className="w-4 h-4"
+                                                        key={index} src="/images/star.svg" alt=""/>
                                                 ))}
 
                                             {/* Empty Star */}
                                             {Array(5 - Math.round(course.rating))
                                                 .fill()
                                                 .map((_, index) => (
-                                                    <Image height={10} width={10}
-                                                        key={index}
-                                                        src="/images/emptystar.svg"
-                                                        alt="Empty Star"
-                                                        className="w-4 h-4"
-                                                    />
+                                                    <Image height={10} width={10} className="w-4 h-4"
+                                                        key={index} src="/images/emptystar.svg" alt=""/>
                                                 ))}
                                         </div>
 

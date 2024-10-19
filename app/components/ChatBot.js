@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Draggable from "react-draggable";
+import { RxCross2 } from "react-icons/rx";
+
 
 const ChatBot = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +17,8 @@ const ChatBot = () => {
                     onClick={toggleChat}
                     className=" transform hover:-translate-y-3 duration-500"
                 >
-                    <Image
-                        src="/images/chatbot.png"
-                        alt="Chatbot"
-                        width={50}
-                        height={50}
-                        className="sm:w-16 sm:h-16"
-                    />
+                    <Image width={50} height={50} className="sm:w-16 sm:h-16"
+                        src="/images/chatbot.png" alt="Chatbot"/>
                 </button>
             )}
 
@@ -34,9 +31,8 @@ const ChatBot = () => {
                                 <h2 className="text-xl">GenAI Chatbot</h2>
                                 <button
                                     onClick={toggleChat}
-                                    className="text-white no-drag hover:text-gray-200 hover:text-xl text-lg "
-                                >
-                                    X
+                                    className="text-white no-drag hover:text-gray-200 hover:text-xl text-lg ">
+                                    <RxCross2 />
                                 </button>
                             </div>
                         </div>
@@ -67,8 +63,7 @@ const ChatBot = () => {
                                     <input
                                         type="text"
                                         placeholder="Write your message here..."
-                                        className="text-sm w-full outline-none"
-                                    />
+                                        className="text-sm w-full outline-none"/>
                                 </div>
                                 <div className="inline-flex justify-between w-full">
                                     <div className="flex gap-2 cursor-pointer">
