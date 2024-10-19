@@ -16,7 +16,7 @@ const ChatBot = () => {
                     className=" transform hover:-translate-y-3 duration-500"
                 >
                     <Image
-                        src="/images/chatbot.svg"
+                        src="/images/chatbot.png"
                         alt="Chatbot"
                         width={50}
                         height={50}
@@ -44,7 +44,7 @@ const ChatBot = () => {
                             {/* Bot's Message */}
                             <div className="flex items-start">
                                 <Image
-                                    src="/images/chatbot.svg"
+                                    src="/images/chatbot.png"
                                     alt="Bot"
                                     width={40}
                                     height={40}

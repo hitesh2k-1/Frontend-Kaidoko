@@ -15,20 +15,26 @@ const TopSellingCourses = () => {
         {
             id: 1,
             title: 'Bitcoin Technology and Application',
-            imgSrc: '/images/bitcoin.svg',
-            details: 'Discover the essentials of computing with our Course on Computer Concepts. From hardware to programming languages, delve into the fundamentals and unlock the keys to navigating the digital world confidently.'
+            imgSrc: '/images/bitcoin.png',
+            details: 'Discover the essentials of computing with our Course on Computer Concepts. From hardware to programming languages, delve into the fundamentals and unlock the keys to navigating the digital world confidently.',
+            teacher: 'Mr. Bhanu',
+            price: '₹599'
         },
         {
             id: 2,
             title: 'Course on Computer Concepts',
-            imgSrc: '/images/course.svg',
-            details: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos perspiciatis voluptatum voluptatem. Ipsum quia repellendus facilis earum, quibusdam dolor ab voluptatem quaerat corrupti!'
+            imgSrc: '/images/course.png',
+            details: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos perspiciatis voluptatum voluptatem. Ipsum quia repellendus facilis earum, quibusdam dolor ab voluptatem quaerat corrupti!',
+            teacher: 'Mrs. Bhawna',
+            price: '₹499'
         },
         {
             id: 3,
             title: 'Data Analytics & Machine Learning (Python)',
-            imgSrc: '/images/data.svg',
-            details: ' delve into the fundamentals and unlock the keys to navigating the digital world confidently.'
+            imgSrc: '/images/data.png',
+            details: 'Delve into the fundamentals and unlock the keys to navigating the digital world confidently into the fundamentals and unlock the keys to navigating the digital world confidently.',
+            teacher: 'Mr. Singh',
+            price: '₹699'
         }
     ];
 
@@ -71,6 +77,8 @@ const TopSellingCourses = () => {
         };
     }, []);
 
+    const selectedCourseData = courses.find(course => course.id === selectedCourse);
+
     return (
         <div className="relative bg-gradient-to-r from-[#094C3D] to-[#116955] mb-10 sm:mb-20 rounded-3xl shadow-md sm:p-8 p-4 text-white max-w-[92vw] mx-auto">
             <Image ref={notesRef} className={`absolute top-[-20px] right-10 sm:right-16 sm:w-36 transition-transform duration-1000 ${loadedNotes ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"}`} height={60} width={80} src="/images/notes.svg" alt="" />
@@ -83,12 +91,12 @@ const TopSellingCourses = () => {
             </div>
 
             <div className='flex gap-10 lg:gap-20 justify-between'>
-                {/* Courses List */}
+                {/*Left side Courses List */}
                 <div className="w-full">
                     {courses.map((course) => (
                         <div key={course.id} className="w-full mb-2">
                             <div
-                                className="flex justify-between items-center hover:bg-[#A3E47B33] rounded-t-lg lg:rounded-lg cursor-pointer">
+                                className="flex justify-between items-center lg:max-w-[600px] hover:bg-[#A3E47B33] rounded-t-lg lg:rounded-lg cursor-pointer" onClick={() => toggleCourse(course.id)}>
                                 <div className="flex items-center p-4">
                                     <Image src={course.imgSrc} alt={course.title} width={50} height={50} className="rounded-lg" />
                                     <span className="ml-4 sm:text-lg font-medium">{course.title}</span>
@@ -98,11 +106,11 @@ const TopSellingCourses = () => {
                                 </div>
                             </div>
 
-                            <div className={`overflow-hidden transition-all duration-500 ${selectedCourse === course.id  ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                            <div className={`overflow-hidden transition-all lg:hidden duration-500 ${selectedCourse === course.id ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                 <div className="p-4 bg-[#A3E47B33] rounded-b-lg">
                                     <button className='border px-4 py-1 rounded-full my-2 text-sm'>Best Seller</button>
                                     <p>{course.details}</p>
-                                    <p className="mt-2 font-semibold">Teacher: Mrs. Bhawna</p>
+                                    <p className="mt-2 font-semibold">Teacher: {course.teacher}</p>
                                     <div className="flex items-center mb-4">
                                         <div className='flex items-center gap-2'>
                                             <span><Image height={10} width={60} src="/images/stars.svg" alt="Stars Rating" /></span>
@@ -110,7 +118,7 @@ const TopSellingCourses = () => {
                                         </div>
                                     </div>
                                     <p className="text-2xl font-semibold mt-4">
-                                        ₹599 <span className="text-sm font-thin text-gray-200">(inclusive of taxes)</span>
+                                        {course.price} <span className="text-sm font-thin text-gray-200">(inclusive of taxes)</span>
                                     </p>
                                     <div className="mt-4 flex gap-6">
                                         <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
@@ -128,33 +136,35 @@ const TopSellingCourses = () => {
                     ))}
                 </div>
 
-                {/* Right Column */}
-                <div className='hidden lg:block'>
-                    <h3 className="text-lg mr-20 mb-4">
-                        Discover the essentials of computing with our Course on Computer Concepts. From hardware to programming languages, delve into the fundamentals and unlock the keys to navigating the digital world confidently.
-                    </h3>
+                {/* Right Side*/}
+                {selectedCourseData && (
+                    <div className='hidden lg:block m-auto '>
+                        <h3 className="text-lg mr-20 mb-4">
+                            {selectedCourseData.details}
+                        </h3>
 
-                    <p className="text-lg mb-2"><strong>Teacher:</strong> Mrs. Bhawna</p>
-                    <div className="flex items-center mb-4">
-                        <div className='flex items-center gap-2'>
-                            <span><Image height={14} width={85} src="/images/stars.svg" alt="Stars Rating" /></span>
-                            <span className="font-semibold font-lg"> 4.5 by 1,724 students</span>
+                        <p className="text-lg mb-2"><strong>Teacher:</strong> {selectedCourseData.teacher}</p>
+                        <div className="flex items-center mb-4">
+                            <div className='flex items-center gap-2'>
+                                <span><Image height={14} width={85} src="/images/stars.svg" alt="Stars Rating" /></span>
+                                <span className="font-semibold font-lg"> 4.5 by 1,724 students</span>
+                            </div>
+                        </div>
+
+                        <p className="text-3xl font-semibold">{selectedCourseData.price} <span className="text-base text-gray-300 font-normal">(inclusive of taxes)</span></p>
+
+                        <div className="mt-4 flex gap-6">
+                            <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
+                                <span className='cursor-pointer'>View Details</span>
+                                <FaArrowRightLong />
+                            </div>
+                            <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
+                                <span className='cursor-pointer'>Wishlist Course</span>
+                                <FaArrowRightLong />
+                            </div>
                         </div>
                     </div>
-
-                    <p className="text-3xl font-semibold">₹599 <span className="text-base text-gray-300 font-normal">(inclusive of taxes)</span></p>
-
-                    <div className="mt-4 flex gap-6">
-                        <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                            <span className='cursor-pointer'>View Details</span>
-                            <FaArrowRightLong />
-                        </div>
-                        <div className="flex items-center text-[#F4B955] gap-2 border-b border-[#F4B955]">
-                            <span className='cursor-pointer'>Wishlist Course</span>
-                            <FaArrowRightLong />
-                        </div>
-                    </div>
-                </div>
+                )}
             </div>
 
             {/* Bottom Section */}

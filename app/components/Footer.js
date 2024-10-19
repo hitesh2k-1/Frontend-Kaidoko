@@ -35,8 +35,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex items-end gap-20">
-                        <Image height={165} width={100} src="/images/bigbot.svg" alt="Robot" className="transition-transform transform hover:-translate-y-2 cursor-pointer " />
-                        <Image className="hidden lg:block transition-transform transform hover:-translate-y-2 cursor-pointer" height={72} width={72} src="/images/chatbot.svg" alt="" />
+                        <Image height={165} width={100} src="/images/bigbot.png" alt="Robot" className="transition-transform transform hover:-translate-y-2 cursor-pointer " />
+                        <Image className="hidden lg:block transition-transform transform hover:-translate-y-2 cursor-pointer" height={72} width={72} src="/images/chatbot.png" alt="" />
                     </div>
                 </div>
             </div>

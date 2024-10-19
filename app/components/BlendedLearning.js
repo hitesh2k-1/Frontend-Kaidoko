@@ -12,7 +12,7 @@ const BlendedLearning = () => {
             students: 615,
             teacher: "Mr. Balamurugan N & Harish R",
             price: 499,
-            image: "/images/pg.svg",
+            image: "/images/pg.png",
         },
         {
             title: "Certificate Course in AWS",
@@ -28,7 +28,7 @@ const BlendedLearning = () => {
             students: 65,
             teacher: "Mahalaskhmi P",
             price: 699,
-            image: "/images/certified.svg",
+            image: "/images/certified.png",
         },
         {
             title: "PG Program in Data Engineering",
